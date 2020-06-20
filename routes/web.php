@@ -19,8 +19,7 @@ Route::get('/about', function () {
 
 Auth::routes();
 
-Route::get('/', 'WelcomeController@index')->name('');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('');
 
 Route::get('/kakiem', 'CatController@index')->name('kakiem');
 Route:: get ('/suniem', 'ItemsController@index')->name('suniem');
