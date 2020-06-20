@@ -9,6 +9,7 @@ class HomeController extends Controller
     public function index()
     {
         $items = Items::inRandomOrder()->take(8)->get();
+        $newest = Items::orderBy('created_at', 'asc')->take(3)->get();
         return view('home')->with('items', $items);
           
     }
