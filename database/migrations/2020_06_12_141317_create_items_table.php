@@ -17,6 +17,8 @@ class CreateItemsTable extends Migration
             $table->id();
             //$table->string('name'); //varchar 255
             $table->string('title');
+            $table->string('description');
+            $table->float('price');
             $table->timestamps();
         });
     }
