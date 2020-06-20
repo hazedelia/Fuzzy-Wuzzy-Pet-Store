@@ -27,6 +27,26 @@
                 Fuzzy Wuzzy's Pet Store
                 </div>
                 <h1>Visas preces</h1>
+                <?php
+                if(count($items)){
+                    echo "<table>";
+                    echo "<tr>";
+                        echo "<th> Title </th>";
+                        echo "<th> Description </th>";
+                        echo "<th> Price </th>";
+                    echo "</tr>";
+                    foreach($items as $item){
+                        echo "<tr>";
+                        echo "<td>$item->title</td>";
+                        echo "<td>$item->description</td>";
+                        echo "<td>$item->price €</td>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                }
+               
+               
+                ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Kaķiem</a>
                     <a href="https://laracasts.com">Suņiem</a>
