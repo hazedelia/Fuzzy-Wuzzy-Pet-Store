@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Items;
-class ItemsController extends Controller
+class CatController extends Controller
 {
     public function index()
     {
-        $items = Items::orderBy('title', 'asc')->get();
+        $items = Items::orderBy('title', 'asc')->where('category', '=', 'CAT')->get();
         return view('items')->with('items', $items);
     }
 
