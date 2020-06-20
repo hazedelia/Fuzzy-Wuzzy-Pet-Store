@@ -21,4 +21,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/kakiem', 'ItemsController@index')->name('kakiem');
+
 
