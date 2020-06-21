@@ -23,7 +23,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-       <a class="navbar-brand" href="/"><span> <img style="max-width: 4rem;" src="assets/logo.png" alt="Girl in a jacket"></span> Fuzzy Wuzzy</a> 
+       <a class="navbar-brand" href="/"><span> <img style="max-width: 4rem;" src="assets/logo.jpg" alt="Dog with cat"></span> Fuzzy Wuzzy</a> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
