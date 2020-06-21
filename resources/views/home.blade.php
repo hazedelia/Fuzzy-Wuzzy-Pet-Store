@@ -52,14 +52,13 @@
             echo '
             <div class="col-lg-4 col-md-6 mb-3">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="../../assets/cat_dog.jpg" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     <a href="#"> ' .$listItem->title.'</a>
                   </h4>
                   <h5>'.$listItem->price.'</h5>
                   <h5>'.$listItem->description.'</h5>
-                  <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($listItem->image)) }}" height="100" width="100">
+                  <img class="card-img-top" src="data:image/jpg;base64,'.base64_encode($listItem->image).'">
                 </div>
               </div>
             </div>
