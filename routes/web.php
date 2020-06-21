@@ -22,7 +22,10 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('');
 
 Route::get('/kakiem', 'CatController@index')->name('kakiem');
-Route:: get ('/suniem', 'ItemsController@index')->name('suniem');
+
+Route:: get ('/suniem', 'DogController@index')->name('suniem');
 Route:: get ('/grauzejiem', 'RodentController@index')->name('grauzejiem');
+
 Route:: get ('/main', 'MainController@index');
+
 
