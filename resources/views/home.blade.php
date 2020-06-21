@@ -46,12 +46,21 @@
 
     <div class="row">
 
+    @foreach ($items as $item)
+
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <a href="#"><img class="card-img-top" src="../../assets/cat_dog.jpg" alt=""></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="#">Item One</a>
+              <hr>
+              <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+                <div class="cart-action">
+                  <input type="submit" value="Add to Cart" class="btnAddAction"/>
+                </div>
+              </form>
+              <!-- <a href ="{{route('cart.add')}}"class= "card-link">Pievienot grozam </a> -->
             </h4>
             <h5>$24.99</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -146,4 +155,6 @@
     <!-- /.row -->
 
   </div>
+  @endforeach
 @endsection
+

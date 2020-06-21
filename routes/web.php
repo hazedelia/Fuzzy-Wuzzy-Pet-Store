@@ -22,11 +22,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('');
 
 Route::get('/kakiem', 'CatController@index')->name('kakiem');
-<<<<<<< HEAD
 Route:: get ('/suniem', 'DogController@index')->name('suniem');
-Route:: get ('/grauzejiem', 'ItemsController@o')->name('grauzejiem');
-=======
-Route:: get ('/suniem', 'ItemsController@index')->name('suniem');
 Route:: get ('/grauzejiem', 'RodentController@index')->name('grauzejiem');
->>>>>>> a156080c7e710b7aad24b8b6946fb56923d0b260
+Route::get ('/cart', 'CartController@add')->name('cart.add');
 
