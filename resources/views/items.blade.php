@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fuzzy Wuzzy</title>
 </head>
 <body>
 <div class="flex-center position-ref full-height">
@@ -46,13 +46,7 @@
                 }
                
                
-                ?>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Kaķiem</a>
-                    <a href="https://laracasts.com">Suņiem</a>
-                    <a href="https://laravel-news.com">Grauzējiem</a>
-                </div>
-            
+                ?>            
             </div>
         </div>
 </body>

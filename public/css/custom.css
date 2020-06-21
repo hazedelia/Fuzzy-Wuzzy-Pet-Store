@@ -5,3 +5,25 @@ body {
   table, th, td {
     border: 1px solid black;
   }
+
+  .navbar {
+    background-color: #61bf41!important;
+  }
+
+  body { 
+    width: 100%;  
+  }
+
+  .full-screen {
+    width: 100%;
+  }
+
+  
+  @media (min-width: 576px) { 
+
+      .carousel-inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: center;
+  }
+}

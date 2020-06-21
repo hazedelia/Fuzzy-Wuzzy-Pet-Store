@@ -4966,6 +4966,11 @@ input[type=button].btn-block {
   color: #fff;
 }
 
+.card_block {
+  flex-direction: row;
+  height: 100%;
+}
+
 .card {
   position: relative;
   display: flex;
