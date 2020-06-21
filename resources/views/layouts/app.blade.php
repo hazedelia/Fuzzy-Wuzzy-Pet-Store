@@ -45,6 +45,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/login">Autorizēties</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">Reģistrēties</a>
+          </li>
         </ul>
       </div>
     </div>
