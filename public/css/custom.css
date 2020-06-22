@@ -22,6 +22,10 @@ body {
     margin-top: 3%;
   }
 
+  .navigation > ul {
+    align-items: center;
+  }
+
   .nav-link.name {
     color:#fff !important;
     text-decoration: underline;
