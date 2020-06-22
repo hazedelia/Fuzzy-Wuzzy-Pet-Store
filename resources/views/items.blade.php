@@ -29,20 +29,25 @@
                 <h1>Visas preces</h1>
                 <?php
                 if(count($items)){
-                    echo "<table>";
-                    echo "<tr>";
-                        echo "<th> Title </th>";
-                        echo "<th> Description </th>";
-                        echo "<th> Price </th>";
-                    echo "</tr>";
+                    
+                    echo "<div class='item_block row'>";
                     foreach($items as $item){
-                        echo "<tr>";
-                        echo "<td>$item->title</td>";
-                        echo "<td>$item->description</td>";
-                        echo "<td>$item->price €</td>";
-                        echo "</tr>";
+                        echo "<div class='item-instance'>";
+                            echo "<div class='item-img_block'>";
+                                echo "<div><img style='width: 300px;' src='data:image/jpg;base64,".base64_encode($item->image)."'/></div>";
+                            echo "</div>";
+                            echo "<div class='item-descr_block'>";
+                                echo "<div>";
+                                echo "<h3>$item->title</h3>";
+                                echo "<div>";
+                                echo "$item->description</div>";
+                                echo "<div>";
+                                echo "$item->price €</div>";
+                            echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
                     }
-                    echo "</table>";
+                    echo "</div>";
                 }
                
                
