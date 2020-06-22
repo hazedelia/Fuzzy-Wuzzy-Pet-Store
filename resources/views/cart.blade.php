@@ -1,3 +1,33 @@
+<?php 
+    session_start();
+    #cart.php - A simple shopping cart with add to cart, and remove links
+
+    //Reset
+    if ( isset($_GET['reset']) )
+        {
+            if ($_GET["reset"] == 'true')
+                {
+                    unset($_SESSION["amount"]); //The amount from each product
+                    unset($_SESSION["total"]); //The total cost
+                    unset($_SESSION["quantity"]); //The total cost
+                    unset($_SESSION["cart"]); //Which item has been chosen
+                    unset($_SESSION["products"]);
+                    // $_SESSION["counter"] = 0;
+                }
+        }
+
+    //Delete
+    if ( isset($_GET["delete"]) )
+        {
+            $i = $_GET["delete"];
+            unset($_SESSION["cart"][$i]);
+            unset($_SESSION["quantity"][$i]);
+            unset($_SESSION["amount"][$i]);
+            unset($_SESSION["products"][$i]);
+            // $_SESSION["counter"] = 0;
+        }
+?>
+
 @extends('layouts.app')
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +56,38 @@
                 <div class="title m-b-md">
                 Fuzzy Wuzzy's Pet Store
                 <h1>Grozs</h1>
+                <?php
+                    if ( isset($_SESSION["cart"]) ) {
+                ?>
+                <table>
+                <tr>
+                <th>Prece</th>
+                <th>Cena</th>
+                <th>Skaits</th>
+                </tr>
+                <?php
+                    $total = 0;
+                    foreach ( $_SESSION["cart"] as $index ) {
+                ?>
+                <tr>
+                <td><?php echo( $_SESSION["products"][$index] ); ?></td>
+                <td><?php echo( $_SESSION["amount"][$index] ); ?></td>
+                <td><?php echo( $_SESSION["quantity"][$index] ); ?></td>
+                <td><a href="?delete=<?php echo($index); ?>">Izdzēst preci</a></td>
+                </tr>
+                <?php
+                    $total = $total + $_SESSION["amount"][$index];
+                    }
+                    $_SESSION["total"] = $total;
+                ?>
+                <tr>
+                <td colspan="7">Summa : <?php echo($total); ?></td>
+                </tr>
+                </table>
+                <?php
+                }
+                ?>
+                <h2><a href="?reset=true">Iztukšot grozu</a></h2>
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Kaķiem</a>
