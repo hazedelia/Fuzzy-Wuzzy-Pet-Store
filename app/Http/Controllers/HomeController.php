@@ -10,7 +10,12 @@ class HomeController extends Controller
     public function index()
     {
         $list = Items::inRandomOrder()->get();
-        $name = Auth::user()->name;
+
+        $name = null;
+        if (Auth::user()) {
+            $name = Auth::user()->name;
+        }
+    
         // $newest = Items::orderBy('created_at', 'asc')->take(3)->get();
         return view('home')->with('list', $list)->with('name', $name);
           

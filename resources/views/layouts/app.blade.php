@@ -48,6 +48,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/register">Reģistrēties</a>
           </li>
+          <?php 
+          echo $name ?? '';
+    ?>
         </ul>
       </div>
     </div>
