@@ -5,16 +5,9 @@
 
 <div class="row full-screen"> 
 <div class="col-lg-3">
-
-    <h1 class="my-3">Fuzzy Wuzzy</h1>
     <?php 
           echo $name ?? '';
     ?>
-    <div class="list-group">
-      <a href="#" class="list-group-item">Category 1</a>
-      <a href="#" class="list-group-item">Category 2</a>
-      <a href="#" class="list-group-item">Category 3</a>
-    </div>
 
   </div>
   <!-- /.col-lg-3 -->
