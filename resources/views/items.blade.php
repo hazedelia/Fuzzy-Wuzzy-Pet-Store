@@ -8,6 +8,11 @@
 </head>
 <body>
 <div class="flex-center position-ref full-height">
+    <?php 
+    echo '<div class="text-white" style="color:#fff";>';
+          echo $name ?? '';
+    echo '</div>';
+    ?>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -23,10 +28,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                Fuzzy Wuzzy's Pet Store
-                </div>
-                <h1>Visas preces</h1>
+                <h1 class="visas_preces">Visas preces</h1>
                 <?php
                 if(count($items)){
                     

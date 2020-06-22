@@ -6,7 +6,9 @@
 <div class="row full-screen"> 
 <div class="col-lg-3">
     <?php 
+    echo '<div class="text-white" style="color:#fff";>';
           echo $name ?? '';
+    echo '</div>';
     ?>
 
   </div>
@@ -52,7 +54,7 @@
                   <h4 class="card-title">
                     <a href="#"> ' .$listItem->title.'</a>
                   </h4>
-                  <h5>'.$listItem->price.'</h5>
+                  <h5>'.$listItem->price.' €</h5>
                   <h5>'.$listItem->description.'</h5>
                   <img class="card-img-top" src="data:image/jpg;base64,'.base64_encode($listItem->image).'">
                 </div>

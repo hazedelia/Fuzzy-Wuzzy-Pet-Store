@@ -51,4 +51,11 @@ class LoginController extends Controller
         return redirect()->intended('dashboard');
         }
     }
+
+    public function getSignOut() {
+		
+        Auth::logout();
+        return Redirect::route('');
+        
+    }
 }

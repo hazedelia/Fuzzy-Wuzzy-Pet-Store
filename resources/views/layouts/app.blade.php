@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Home
+            <a class="nav-link" href="/">Sākums
             </a>
           </li>
           <li class="nav-item">
@@ -48,9 +48,18 @@
           <li class="nav-item">
             <a class="nav-link" href="/register">Reģistrēties</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Izrakstīties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart"> <span> <img src="assets/shopping_cart.png" alt="Dog with cat"></span></a>
+          </li>
           <?php 
-          echo $name ?? '';
-    ?>
+            echo '<li class="nav-item"> <span class="nav-link name">';
+                  echo $name ?? '';
+            echo '</span></li>';
+            ?>
+    
         </ul>
       </div>
     </div>
