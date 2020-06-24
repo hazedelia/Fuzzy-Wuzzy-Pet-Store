@@ -52,10 +52,10 @@ body {
     margin-top: 5%;
   }
 
-  .item-descr_block {
+  /* .item-descr_block {
     display: flex;
     justify-content: space-evenly;
-  }
+  } */
   
   @media (min-width: 576px) { 
 

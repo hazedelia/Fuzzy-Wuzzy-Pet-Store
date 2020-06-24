@@ -1,4 +1,6 @@
+@extends('cart-session')
 @extends('layouts.app')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,24 +32,24 @@
             <div class="content">
                 <h1 class="visas_preces">{{__("Visas preces")}}</h1>
                 <?php
-                if(count($items)){
+                if(count($list)){
                     echo "<div class='item_block row'>";
-                    foreach($items as $item){
+                    foreach($list as $item){
                         echo "<div class='item-instance'>";
                             echo "<div class='item-img_block'>";
                                 echo "<div><img style='width: 300px;' src='data:image/jpg;base64,".base64_encode($item->image)."'/></div>";
                             echo "</div>";
                             echo "<div class='item-descr_block'>";
-                                echo "<div>";
+                                
                                 if($lang === 'en' && $item->title_en) echo "<h3>$item->title_en</h3>";
                                 else echo "<h3>$item->title</h3>";
-                                echo "<div>";
+                                echo "<br>";
                                 if($lang === 'en' && $item->description_en) echo $item->description_en;
                                 else echo $item->description;
-                                echo "<div>";
-                                echo "$item->price €</div>";
-                            echo "</div>";
-                        echo "</div>";
+                                
+                                echo " <br> $item->price €";
+                                echo "<br> <a href='?add=$item->id'>Pievienot grozam</a> </div>"; 
+                        
                         echo "</div>";
                     }
                     echo "</div>";

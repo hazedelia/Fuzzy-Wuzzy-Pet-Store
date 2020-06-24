@@ -10,7 +10,7 @@ class RodentController extends Controller
     public function index()
     {
         $items = Items::orderBy('title', 'asc')->where('category', '=', 'RODENT')->get();
-        return view('items')->with('items', $items)->with('lang', App::getLocale());
+        return view('items')->with('list', $items)->with('lang', App::getLocale());
     }
 
 }
