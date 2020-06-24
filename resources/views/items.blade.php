@@ -31,7 +31,6 @@
                 <h1 class="visas_preces">Visas preces</h1>
                 <?php
                 if(count($items)){
-                    
                     echo "<div class='item_block row'>";
                     foreach($items as $item){
                         echo "<div class='item-instance'>";
@@ -40,9 +39,11 @@
                             echo "</div>";
                             echo "<div class='item-descr_block'>";
                                 echo "<div>";
-                                echo "<h3>$item->title</h3>";
+                                if($lang === 'en' && $item->title_en) echo "<h3>$item->title_en</h3>";
+                                else echo "<h3>$item->title</h3>";
                                 echo "<div>";
-                                echo "$item->description</div>";
+                                if($lang === 'en' && $item->description_en) echo $item->description_en;
+                                else echo $item->description;
                                 echo "<div>";
                                 echo "$item->price €</div>";
                             echo "</div>";

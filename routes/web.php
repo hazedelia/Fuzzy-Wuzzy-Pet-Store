@@ -20,12 +20,15 @@ Route::get('/about', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('');
+Route::get('/changelang', 'HomeController@changeLanguage') ->name (''); 
 
 Route::get('/kakiem', 'CatController@index')->name('kakiem');
 
 Route:: get ('/suniem', 'DogController@index')->name('suniem');
+
 Route:: get ('/grauzejiem', 'RodentController@index')->name('grauzejiem');
 
 Route:: get ('/main', 'MainController@index');
+
 Route::get ('/cart', 'CartController@add')->name('cart.add');
 

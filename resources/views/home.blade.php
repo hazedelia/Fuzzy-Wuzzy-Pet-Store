@@ -53,10 +53,16 @@
               <div class="card h-100">
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#"> ' .$listItem->title.'</a>
+                  ';
+                  if($lang === 'en' && $listItem->title_en) echo "<a href='#'>$listItem->title_en</a>";
+                  else echo "<a href='#'>$listItem->title</a>";
+                  echo '
                   </h4>
                   <h5>'.$listItem->price.'€</h5>
-                  <h5>'.$listItem->description.'</h5>
+                  <h5>';
+                  if($lang === 'en' && $listItem->description_en) echo $listItem->description_en;
+                  else echo $listItem->description;
+                  echo '</h5>
                   <img class="card-img-top" src="data:image/jpg;base64,'.base64_encode($listItem->image).'">
                   <a href="?add='.($listItem->id).'">Add to cart</a>
                 </div>

@@ -54,7 +54,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                Fuzzy Wuzzy's Pet Store
+              
                 <h1>Grozs</h1>
                 <?php
                     if ( isset($_SESSION["cart"]) ) {
@@ -89,11 +89,7 @@
                 ?>
                 <h2><a href="?reset=true">Iztukšot grozu</a></h2>
                 </div>
-                <div class="links">
-                    <a href="https://laravel.com/docs">Kaķiem</a>
-                    <a href="https://laracasts.com">Suņiem</a>
-                    <a href="https://laravel-news.com">Grauzējiem</a>
-                </div>
+              
             
             </div>
         </div>

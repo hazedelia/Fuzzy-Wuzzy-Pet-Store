@@ -24,32 +24,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
        <a class="navbar-brand" href="/"><span> <img style="max-width: 4rem;" src="assets/logo.jpg" alt="Dog with cat"></span> Fuzzy Wuzzy</a> 
+       <a href="/changelang?lang=lv">LV</a> / <a href="/changelang?lang=en">EN</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navigation" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/">Sākums
-            </a>
+            <a class="nav-link" href="/">{{__("Sākums")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kakiem">Kaķiem</a>
+            <a class="nav-link" href="/kakiem">{{__("Kaķiem")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/suniem">Suņiem</a>
+            <a class="nav-link" href="/suniem">{{__("Suņiem")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/grauzejiem">Grauzējiem</a>
+            <a class="nav-link" href="/grauzejiem">{{__("Grauzējiem")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Autorizēties</a>
+          <a class="nav-link" href="/login">{{__("Autorizēties")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register">Reģistrēties</a>
+            <a class="nav-link" href="/register">{{__("Reģistrēties")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Izrakstīties</a>
+            <a class="nav-link" href="/">{{__("Izrakstīties")}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/cart"> <span> <img src="assets/shopping_cart.png" alt="Dog with cat"></span></a>
