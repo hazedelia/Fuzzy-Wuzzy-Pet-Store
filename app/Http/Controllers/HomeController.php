@@ -22,7 +22,6 @@ class HomeController extends Controller
         return view('home')->with('list', $list)->with('name', $name)->with('lang', App::getLocale());
     }
 
-    
     public function changeLanguage(Request $request)
     {
         if ($request->has('lang')) {
@@ -32,6 +31,12 @@ class HomeController extends Controller
                 Session::put('locale', $lang);
             }
         }
+
+        return redirect()->back();
+    }
+
+    public function logout () {
+        Auth::logout();
 
         return redirect()->back();
     }
