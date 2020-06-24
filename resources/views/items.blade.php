@@ -48,7 +48,7 @@
                                 else echo $item->description;
                                 
                                 echo " <br> $item->price €";
-                                echo "<br> <a href='?add=$item->id'>Pievienot grozam</a> </div>"; 
+                                echo "<br> <a href='?add=$item->id' class='btn btn-secondary btn-lg active add-to-cart' role='button'>Pievienot grozam</a> </div>"; 
                         
                         echo "</div>";
                     }

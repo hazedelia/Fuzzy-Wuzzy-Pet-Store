@@ -56,6 +56,20 @@ body {
     display: flex;
     justify-content: space-evenly;
   } */
+
+  .add-to-cart:hover {
+    outline:none !important;
+    background-color: #8b9194!important;
+    border-color: #8b9194!important;
+  }
+
+  .add-to-cart2:hover {
+    outline:none !important;
+    background-color: #8b9194!important;
+    border-color: #8b9194!important;
+    width: 50%;
+    margin: auto;
+  }
   
   @media (min-width: 576px) { 
 

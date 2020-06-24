@@ -64,7 +64,7 @@
                   else echo $listItem->description;
                   echo '</h5>
                   <img class="card-img-top" src="data:image/jpg;base64,'.base64_encode($listItem->image).'">
-                <a href="?add='.($listItem->id).'">Pievienot grozam</a>
+                <a style="width: 50%; margin:auto;" role="button" class="btn btn-secondary btn-lg active add-to-cart2 justify-content-center d-flex" href="?add='.($listItem->id).'">Pievienot grozam</a>
                 </div>
               </div>
             </div>
