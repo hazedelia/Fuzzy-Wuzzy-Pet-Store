@@ -49,9 +49,6 @@
             <a class="nav-link" href="/register">{{__("Reģistrēties")}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">{{__("Izrakstīties")}}</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="/cart"> <span> <img src="assets/shopping_cart.png" alt="Dog with cat"></span></a>
           </li>
           <?php 

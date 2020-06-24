@@ -55,15 +55,15 @@
             <div class="content">
                 <div class="title m-b-md">
               
-                <h1>Grozs</h1>
+                <h1>{{__("Grozs")}}</h1>
                 <?php
                     if ( isset($_SESSION["cart"]) ) {
                 ?>
                 <table>
                 <tr>
-                <th>Prece</th>
-                <th>Cena</th>
-                <th>Skaits</th>
+                <th>{{__("Prece")}}</th>
+                <th>{{__("Cena")}}</th>
+                <th>{{__("Skaits")}}</th>
                 </tr>
                 <?php
                     $total = 0;
@@ -73,7 +73,7 @@
                 <td><?php echo( $_SESSION["products"][$index] ); ?></td>
                 <td><?php echo( $_SESSION["amount"][$index] ); ?></td>
                 <td><?php echo( $_SESSION["quantity"][$index] ); ?></td>
-                <td><a href="?delete=<?php echo($index); ?>">Izdzēst preci</a></td>
+                <td><a href="?delete=<?php echo($index); ?>">{{__("Izdzēst preci")}}</a></td>
                 </tr>
                 <?php
                     $total = $total + $_SESSION["amount"][$index];
@@ -81,13 +81,13 @@
                     $_SESSION["total"] = $total;
                 ?>
                 <tr>
-                <td colspan="7">Summa : <?php echo($total); ?></td>
+                <td colspan="7">{{__("Summa")}} : <?php echo($total); ?></td>
                 </tr>
                 </table>
                 <?php
                 }
                 ?>
-                <h2><a href="?reset=true">Iztukšot grozu</a></h2>
+                <h2><a href="?reset=true">{{__("Iztukšot grozu")}}</a></h2>
                 </div>
               
             

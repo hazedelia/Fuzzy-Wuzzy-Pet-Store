@@ -28,7 +28,7 @@
             @endif
 
             <div class="content">
-                <h1 class="visas_preces">Visas preces</h1>
+                <h1 class="visas_preces">{{__("Visas preces")}}</h1>
                 <?php
                 if(count($items)){
                     echo "<div class='item_block row'>";

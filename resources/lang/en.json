@@ -5,5 +5,14 @@
     "Grauzējiem":"Rodent",
     "Autorizēties":"Log in",
     "Reģistrēties":"Register",
-    "Izrakstīties":"Log out"
+    "Izrakstīties":"Log out",
+    "Prece":"Item",
+    "Cena":"Price",
+    "Skaits":"Count",
+    "Summa":"Total",
+    "Iztukšot grozu":"Remove",
+    "Izdzēst preci":"Delete item",
+    "Visas preces":"All products",
+    "Pienot grozam": "Add to cart",
+    "Grozs":"Cart"
 }
